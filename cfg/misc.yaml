@@ -1,0 +1,3 @@
+### miscellaneous configuration ###
+default: &DEFAULT
+  log_to_screen: !!bool True

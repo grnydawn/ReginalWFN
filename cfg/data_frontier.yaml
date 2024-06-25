@@ -1,0 +1,11 @@
+### case-specific configuration ###
+default: &DEFAULT
+  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+  train_data_path: '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/train'
+  valid_data_path: '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/test'
+  inf_data_path: '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/test'
+  exp_dir: '/lustre/orion/cli115/proj-shared/grnydawn/data/RegionalWFN/output'
+  time_means_path:   '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/time_means.npy'
+  global_means_path: '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/global_means.npy'
+  global_stds_path:  '/lustre/orion/cli115/proj-shared/grnydawn/aiworks/fromMing/Regional_WF_FCNet.org/dataset/global_stds.npy'

@@ -1,0 +1,9 @@
+### model configuration ###
+default: &DEFAULT
+  num_blocks: 8
+  nettype: 'afno'
+  patch_size: 2
+  enable_amp: !!bool False 
+  dt: 1
+  n_history: 0
+  roll: !!bool False

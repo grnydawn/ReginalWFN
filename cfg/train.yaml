@@ -1,0 +1,22 @@
+### training configuration ###
+default: &DEFAULT
+  lr: 1E-3
+  scheduler: 'ReduceLROnPlateau'
+  num_data_workers: 4
+  max_epochs: 50
+  batch_size: 64
+  crop_size_x: None
+  crop_size_y: None
+  two_step_training: !!bool False
+  orography: !!bool False
+  orography_path: None
+  add_noise: !!bool False
+  noise_std: 0
+  embed_dim: 712
+  depth: 12
+  enable_amp: !!bool True
+  enable_nhwc: !!bool False
+  optimizer_type: 'Adam' # 'FusedAdam'
+  normalization: 'zscore' 
+  add_grid: !!bool False
+  target: 'default'
